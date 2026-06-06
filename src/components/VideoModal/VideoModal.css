@@ -1,0 +1,92 @@
+.yt-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.yt-modal__content {
+  background: #0f0f0f;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  color: white;
+}
+
+.yt-modal__thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.yt-modal__body {
+  padding: 24px;
+}
+
+.yt-modal__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.yt-modal__channel-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.yt-modal__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.yt-modal__channel {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.yt-modal__stats {
+  color: #aaa;
+  font-size: 13px;
+}
+
+.yt-modal__subscribe {
+  margin-left: auto;
+  background: white;
+  color: #0f0f0f;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.yt-modal__subscribe:hover {
+  background: #e0e0e0;
+}
+
+.yt-modal__close {
+  width: 100%;
+  padding: 12px;
+  background: #272727;
+  border: none;
+  border-radius: 10px;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.yt-modal__close:hover {
+  background: #333;
+}

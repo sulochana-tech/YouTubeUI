@@ -1,0 +1,130 @@
+.yt-sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+  background: white;
+
+  /* KEY: enable vertical scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  transition: width 0.3s ease;
+  border-right: 1px solid #f0f0f0;
+  padding: 12px 0;
+}
+
+/* Custom scrollbar - thin like YouTube */
+.yt-sidebar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.yt-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.yt-sidebar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.yt-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Only show scrollbar on hover */
+.yt-sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.yt-sidebar:hover {
+  scrollbar-color: #ccc transparent;
+}
+
+.yt-sidebar--open {
+  width: 240px;
+}
+
+.yt-sidebar--closed {
+  width: 72px;
+}
+
+/* Section */
+.yt-sidebar__section {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0;
+}
+
+.yt-sidebar__section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f0f0f;
+  padding: 8px 24px 4px;
+  letter-spacing: 0.2px;
+}
+
+/* Divider */
+.yt-sidebar__divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 8px 0;
+}
+
+/* Nav Item */
+.yt-sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #0f0f0f;
+  border-radius: 10px;
+  transition: background 0.15s;
+  padding: 10px 24px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.yt-sidebar__item--icon-only {
+  justify-content: center;
+  padding: 16px 0;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 10px;
+}
+
+.yt-sidebar__item--active {
+  background: #f2f2f2;
+  font-weight: 700;
+}
+
+.yt-sidebar__item:hover {
+  background: #f2f2f2;
+}
+
+.yt-sidebar__icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.yt-sidebar__label {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer */
+.yt-sidebar__footer {
+  padding: 16px 24px;
+  font-size: 12px;
+  color: #aaa;
+  line-height: 2;
+}
